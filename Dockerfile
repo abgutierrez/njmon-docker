@@ -1,7 +1,9 @@
 FROM ubuntu:16.04
 
+ENV PLATFORM="linux"
+ENV VERSION"
 RUN apt-get update && apt-get install -y wget unzip
-RUN wget http://sourceforge.net/projects/nmon/files/njmon_binaries_v10b.zip
+RUN wget http://sourceforge.net/projects/nmon/files/njmon_linux_binaries_v66.zip
 RUN unzip njmon_binaries_v10b.zip -d /njmon
 
 FROM ubuntu:16.04
